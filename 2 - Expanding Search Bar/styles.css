@@ -1,0 +1,33 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.Container{
+    padding: 2rem;
+    width: 80%;
+    margin: auto;
+    min-width: 320px;
+}
+
+.search-bar{
+    width: 30%;
+    line-height: 2;
+    border-radius: 5px;
+    border: 1px solid #bbb;
+    transition: all 0.3s;
+}
+
+.search-bar:focus{
+    width: 100%;
+    border: 2px solid #3a72ca;
+    outline: none;
+}
+
+.search-bar::placeholder{
+    font-weight: 200;
+}
+
+.search-bar:focus::placeholder{
+    color: transparent;
+}

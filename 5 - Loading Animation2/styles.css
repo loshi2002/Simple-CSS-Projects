@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: beige;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.square-container{
+    display: flex;
+    gap: 20px;
+}
+
+.square{
+    width:1.7em;
+    height: 1.7em;
+
+    animation: rotating infinite 1s;
+    
+}
+
+.red{
+    background-color: red;
+    border: 1px solid red;
+}
+
+.yellow{
+    background-color: rgb(248, 228, 6);
+    border: 1px solid rgb(248, 228, 6);
+}
+
+.blue{
+    background-color: blue;
+    border: 1px solid blue;
+}
+
+@keyframes rotating{
+   from{
+    transform: rotate(-45deg);
+   }
+
+   to{
+    transform: rotate(45deg);
+   }
+} 
+
+
+
+
+
+

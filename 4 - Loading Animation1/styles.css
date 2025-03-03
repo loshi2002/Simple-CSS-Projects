@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: beige;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-container{
+    display: flex;
+    gap: 20px;
+}
+
+.circle{
+    width:1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: white;
+
+    animation: pulse infinite alternate 1s; 
+    animation-timing-function: ease-in-out;
+    
+}
+
+@keyframes pulse{ 
+    from{
+        background-color: rgb(193, 189, 189);
+    }
+    
+    to{
+        background-color: rgb(100, 97, 97);
+        height: 1.6rem;
+        width: 1.6rem;
+    }
+}
+
